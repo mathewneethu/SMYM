@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162275986-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162275986-1');
+</script>
+	  <meta name="viewport" content="width=device-width , initial-scale=1.0">
+	  
+	  <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+	  <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+	  <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+	  <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+	  <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	  <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+	    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+	  
+	  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	 <style type="text/css">
+		
+		#slider
+		 {
+			  border: 20px solid white;
+			  box-shadow: 0px 0px 5px 2px #0f0d0d;
+		      overflow: hidden;
+		 }
+		#slider figure 
+		 {
+			position: relative;
+			width: 1000%; /* 100% for each picture, 10 pictures = 1000% */
+			margin: 0;
+			left: 0;
+			animation: 30s slider infinite;
+		 }
+			#slider figure img 
+		 {
+				width: 10%; /* 100 / 10 pictures = 10% */
+				height: 400px; /* to set a maximum height  */
+				float: left;
+				/*  next 2 to continue responsive with the maximum height  */
+				max-width: 60%;
+				min-height: 100%;
+				object-fit: cover;
+		 }
+		 
+		@keyframes slider {
+		0% { left: 0; } /* you must divide 100% fot the amout of images you have */
+		7% { left: 0%; } /* these intermediate steps (7%, 17%, 27%, ... will make the transition speed faster */
+		10% { left: -100%; } /* because my total width: 1000% (10x 100% for 10 images), I will use 10% for each image */
+		17% { left: -100%; }
+		20% { left: -200%; }
+		27% { left: -200%; }
+		30% { left: -300%; }
+		37% { left: -300%; }
+		40% { left: -400%; }
+		47% { left: -400%; }
+		50% { left: -500%; }
+		57% { left: -500%; }
+		60% { left: -600%; }
+		67% { left: -600%; }
+		70% { left: -700%; }
+		77% { left: -700%; }
+		80% { left: -800%; }
+		87% { left: -800%; }
+		90% { left: -900%; }
+		100% { left: -900%; }
+} 
+		 
+		.res-tab
+		 {
+			 
+			 overflow-x: auto;
+			 box-shadow: 0px 0px 8px 10px  #9a9595;
+		 }
+		 table
+		 {
+			 background-color: #fff;
+			 border-collapse: collapse;
+			 width: 100%;
+			
+			 font-size: 16px;
+			 
+		 }
+		 th{
+			 background-color:#42a3eb;
+			 color: #fff;
+			  text-align: left;
+			  text-align: center;
+		 }
+		 td
+		 {
+			 background-color: #fff;
+		
+			 font-weight: 400;
+			 
+		 }
+		 th,td{
+			 padding: 15px 15px 15px 140px;
+			 border: 1px solid #ddd;
+			 
+		 }
+	  </style>
+	  <style>
+	   .Location-Emergency
+		 {
+			 
+			 padding-top: 90px;
+			 font-style: normal;
+			 padding-left: 105px;
+			 font-size: 35px;
+			 padding-bottom: 0px;
+		 }
+		 
+		 .Location-EmergencyH
+		 {
+			 
+			 padding-top: 80px;
+			 font-style: normal;
+			 padding-left: 105px;
+			 font-size: 35px;
+			 padding-bottom: 18px;
+		 }
+	  </style>
+	
+	  <title>SMYM Canada</title>
+	  
+	    <link rel="apple-touch-icon" sizes="57x57" href="/resources/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/resources/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/resources/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/resources/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/resources/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/resources/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/resources/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/resources/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon-180x180.png">
+	  
+  </head>
+	
+	
+	
+  <body>
+	  
+	  
+	  <header class="coverimg">
+		     <nav class="sticky">
+		 <!-- <nav>-->
+		      <div class="row">
+		
+			  <a href="index.html"><img src="resources/img/logo.png" alt="SMYM Logo" class="logo"></a>
+			    <ul class="main-nav js--main-nav">
+				  <li><a href="#features">HOME</a></li>
+					 <li><a href="#Parishes">COVID-19 HELPLINE</a></li>
+					<li><a href="eparchy.html">EPARCHY OF MISSISSAUGA</a></li>
+				   <li><a href="#FAQ">FAQ</a></li>
+				  <li><a href="#Contact">CONTACT</a></li>
+				   <li><a href="#links">LINKS</a></li>
+			   </ul>
+				  <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+			  </div>
+			  
+		  </nav>
+		  
+	  </header>
+	  
+	   <div class="hero-text-box">
+					<div class="row">
+					   <div class="Head-conatiner">
+						   <span class="text1">Eparchy of Mississauga</span>
+						   <span class="text2">SMYM Canada</span>
+						   <span class="text3"><a href="resources/data/covid%2019%20crisis%20management%202.0.pdf" target="_blank">COVID-19 Crisis Management</a></span>
+						</div>
+					</div>
+					
+			      </div>
+	  
+	    <section class="section-features js--section--home" id="features" >
+		  <div class="row">
+			 
+		  <h2>About us</h2>
+		  <p class="long-copy">
+			 Syro Malabar Youth Movement (SMYM) is the official youth movement of the Syro Malabar Catholic Church, which is the second-largest sui juris Eastern Catholic Church after the Ukrainian Church and the largest of Saint Thomas Christian (Nazrani) denominations with almost 5 million believers including  1.6 million catholic youth spread all over the world. The Laity Commission of the Syro Malabar Catholic Church took initiatives since 2011 to connect various youth movements within our church and to bring them together on a single platform. Thus, SMYM, the official Youth Movement of the Syro Malabar Church, officially rolled out on the 30th day of August 2014. 
+The SMYM is in its infancy but is flourishing with a decisive presence in all the 31 dioceses and four major mission centers of the Syro Malabar Church in India, the United States of America, Australia, UK, Europe, and Canada. 
+The SMYM champions and lives out its mission following the faith traditions and liturgical practices of the Syro Malabar Church for the Kingdom of God and Society, to strive for the integral development of the youth and to bind together the youth of the Syro Malabar Church. 
+SMYM programmes and activities are aimed at the holistic development of youth aligning its members with the religious and social causes of the Church.
+		  </p>
+		  </div>
+	  
+		
+	  </section>
+	 
+	  
+	  
+	  <section class="section-cities js--section-features" id="Parishes" >
+	    <div class="row">
+			  <h2>COVID-19 HELPLINE</h2>
+		  </div>
+		      <div class="row js--wp-1  Helpline-Border">
+			  <div class="row">
+				<div class="card">
+				  <div class="box">
+					  <h3><a href="ontario.html">ONTARIO</a></h3>
+				  </div>
+				  </div>
+				  <div class="card">
+				  <div class="box">
+					<h3><a href="novascotia.html">NOVA SCOTIA</a></h3>
+					 
+				  </div>
+				  </div>
+				   <div class="card">
+				  <div class="box">
+					  <h3><a href="quebec.html">QUEBEC</a></h3>
+				  </div>
+				  </div>
+				 
+				  </div>
+				  
+				  
+				   <div class="row">
+					  <div class="card">
+				  <div class="box">
+					  <h3><a href="britishcolumbia.html">B.C.</a></h3>
+				  </div>
+				  </div>
+				  <div class="card">
+				  <div class="box">
+				  <h3><a href="newfoundland.html">NEWFOUNDLAND</a></h3>
+				  </div>
+				  </div>
+					  
+				  <div class="card">
+				  <div class="box">
+					  
+					  <h3><a href="pei.html">P.E.I</a></h3>
+				  </div>
+				  </div>
+					   
+				  </div>   
+					   
+				  
+				  
+				  
+				  <div class="row">
+				  
+				   <div class="card">
+				  <div class="box">
+				   <h3><a href="alberta.html">ALBERTA</a></h3>
+				  </div>
+				  </div>
+				  <div class="card">
+				  <div class="box">
+					  
+					  <h3><a href="manitoba.html">MANITOBA</a></h3>
+				  </div>
+				  </div>
+				<div class="card">
+				  <div class="box">
+					  
+					  <h3><a href="saskatchewan.html">SASKATCHEWAN</a></h3>
+				  </div>
+				  </div>
+					  
+				  
+					  
+				  </div>
+				  
+				  
+				  
+				  
+				  
+			  </div>
+			  
+	  </section>
+	  
+       <section class="Regions" id="FAQ" >
+		   <h2>FAQ</h2>
+	   <div class="row"> 
+		    
+		  <div class="res-tab">
+		
+		   <table>
+			   
+			  <thbody>
+				 
+			   <tr>
+				   <th>Description</th>
+				    <th></th>
+				  </tr>
+				 
+				   <tr>
+					  <td>COVID-19 Self-isolation Sheet</td>
+					  <td class="buttonalign"><a href="resources/data/COVID-19%20Self-isolation%20Sheet.pdf" target="_blank"> <input type="submit"  value="View&nbsp;&amp;&nbsp;Download"></a></td>
+				  </tr>
+				  
+				  
+				   <tr>
+					  <td>COVID-19 Self-Management</td>
+					  <td class="buttonalign"><a href="resources/data/COVID-19%20Self-Management.pdf" target="_blank"> <input type="submit"  value="View&nbsp;&amp;&nbsp;Download"></a></td>
+				  </tr>
+				   
+				   <tr>
+					  <td>FAQ with a Physician</td>
+					 <td class="buttonalign"><a href="resources/data/FAQ%20with%20a%20Physician.pdf" target="_blank"><input type="submit"  value="View&nbsp;&amp;&nbsp;Download"></a></td>
+				  </tr>
+				  
+				  <tr>
+					  <td>Employment Insurance</td>
+					 <td class="buttonalign"><a href="https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/faq-online-application.html" target="_blank"><input type="submit"  value="View&nbsp;&amp;&nbsp;Download"></a></td>
+				  </tr>
+				  
+				  <tr>
+					  <td>Consulate General of India</td>
+					 <td class="buttonalign"><a href="resources/data/FAQ.pdf" target="_blank"><input type="submit"  value="View&nbsp;&amp;&nbsp;Download"></a></td>
+				  </tr>
+				  
+			   </thbody>
+			  </table>
+			 
+		   </div>
+		  </div>
+		
+	  </section>
+	  
+
+	  <section class="section-form" id="Contact">
+		   <div class="row">
+			 <h2>Contact Us</h2>
+		 </div>
+		<div class="row">
+		<form method="post" action="mailto:info@smymcanada.com" >
+		  <div class="contact-form">
+			 
+		    <div class="row">
+				<div class="txtb">
+					<label>Full Name:</label>
+				<input type="text" name="" value="" >
+				</div>
+				<div class="txtb">
+					<label>Email:</label>
+				<input type="text" name="" value="" >
+				</div>
+				<div class="txtb">
+					<label>Phone Number:</label>
+				<input type="text" name="" value="">
+				</div>
+				<div class="txtb">
+					<label>Message:</label>
+				<textarea></textarea>
+				</div>
+				
+				<!--<a class="btn">Send Message</a>-->
+<input type="submit"  value="Send Message">
+			
+			  </div>
+		  
+		  </div> 
+			</form>
+			     </div>
+		 
+		  
+	  </section>
+	  
+	  <section id="links">
+	   
+	  <div class="row">
+			 <h2>Location &amp; Links </h2>
+		 </div>
+		    <div class="row">
+				
+			  <div class="col span-1-of-2 steps-box">
+				 
+				   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.4322634346827!2d-79.7445144850441!3d43.59754057912322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b6a806f3a0e23%3A0x946e61b808e59538!2sSt.Alphonsa%20Syro%20Malabar%20Catholic%20Cathedral!5e0!3m2!1sen!2sca!4v1585363831807!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="box-shadow: 0px 0px 8px 10px  #9a9595; width: 100%; height: 300px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				  
+				  
+			  </div>
+			  <div class="col span-1-of-2 steps-box">
+				  <div class="law">
+				  <ul>
+				  <div class="works-step">
+					  <div>1</div>
+					  <li><a href="https://www.canada.ca/en/services/benefits/ei.html" target="_blank">Employment Benefits</a></li>
+				  </div>
+				  <div class="works-step">
+					  <div>2</div>
+					 <li><a href="https://www.canada.ca/en/services/immigration-citizenship.html" target="_blank">Immigration and Citizenship</a></li>
+				  </div>
+				  <div class="works-step">
+					  <div>3</div>
+					  <li><a href="https://travel.gc.ca/" target="_blank">Travel Canada</a></li>
+				  </div>
+				  
+				   <div class="works-step">
+					  <div>4</div>
+					 <li><a href="https://www.cgitoronto.gov.in/" target="_blank">Consulate General of India, Toronto</a></li>
+				  </div>
+				  
+				   <div class="works-step">
+					  <div>5</div>
+					<li><a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html" target="_blank">COVID-19 Information</a></li>
+				  </div>
+				   </ul>
+				
+			  </div>
+			
+				
+		  </div>
+			   
+		   </div>
+		  
+	  </section>
+	  
+	 
+	  <footer>
+	       <div class="row">
+			       <div class="col span-1-of-2">
+					   <ul class="footer-nav">
+						   <li><a href="#">About us</a></li>
+						   <li><a href="#">Blog</a></li>
+						   <li><a href="#">Press</a></li>
+						   <li><a href="#">iOS App</a></li>
+						   <li><a href="#">Android App</a></li>
+					   </ul>
+				   </div>
+			   
+			       <div class="col span-1-of-2">
+					   <ul class="social-links">
+					       <li><a target="_blank" href="https://www.facebook.com/pages/category/Catholic-Church/Syro-Malabar-Catholic-Eparchy-of-Mississauga-108292153947073/"><i class="ion-social-facebook"></i></a></li>
+						   <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+						   <li><a target="_blank" href="https://www.youtube.com/channel/UC-yLJNeqz0K1Qfj4EPcQxXg"><i class="ion-social-youtube"></i></a></li>
+						   <li><a href="https://www.instagram.com/eparchy_of_mississauga/?igshid=1a4kkh15amo2a" target="_blank"><i class="ion-social-instagram"></i></a></li>
+					   </ul>
+				   </div>
+		   </div>
+		  <div class="row">
+			  <p>
+			 Copyright &copy; 2020 by SMYM Canada. All rights reserved. Developed by <a href="https://www.linkedin.com/in/neethu-mathew-SD437/" target="_blank">Neethu Mathew</a>
+			  </p>
+		  </div>
+		  
+	  </footer>
+	  
+  </body>	
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	
+	<script src="vendors/js/jquery.waypoints.min.js"></script>
+	 <script src="resources/js/script.js"></script>
+	
+
+	
+</html>
+
+
+ 	
+
